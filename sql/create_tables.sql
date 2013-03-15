@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS `geo_cities`;
+
+CREATE TABLE IF NOT EXISTS `geo_cities` (
+	id INT(11) NOT NULL,
+	PRIMARY KEY(id)
+);
