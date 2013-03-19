@@ -1,6 +1,12 @@
 ОПИСАНИЕ ИСХОДНЫХ ДАННЫХ
 ------------------------
-Архив скачиваемый с сайта [ipgeobase.ru](http://ipgeobase.ru/cgi-bin/Archive.cgi) содержит два файла: cidr_optim.txt и cities.txt. Рассмотрим их форматы:
+Архив скачиваемый с сайта [ipgeobase.ru](http://ipgeobase.ru/cgi-bin/Archive.cgi) содержит два файла: cidr_optim.txt и cities.txt.
+
+Ссылка на архив: [http://ipgeobase.ru/files/db/Main/geo_files.tar.gz](http://ipgeobase.ru/files/db/Main/geo_files.tar.gz)
+
+Рассмотрим их форматы
+
+Файлы в кодировке windows-1251
 
 cidr_optim.txt имеет следующий формат записи:
 

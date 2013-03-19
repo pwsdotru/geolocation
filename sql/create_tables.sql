@@ -1,6 +1,23 @@
 DROP TABLE IF EXISTS `geo_cities`;
 
 CREATE TABLE IF NOT EXISTS `geo_cities` (
-	id INT(11) NOT NULL,
-	PRIMARY KEY(id)
+	`id` INT(11) NOT NULL,
+	PRIMARY KEY(`id`),
+	`city_name` VARCHAR(64) NOT NULL DEFAULT '',
+	`area_name` VARCHAR(64) NOT NULL DEFAULT '',
+	`region_name` VARCHAR(64) NOT NULL DEFAULT '',
+	`lat` DOUBLE(12,6) DEFAULT NULL,
+	`lng` DOUBLE(12,6) DEFAULT NULL,
+	`lastchange` TIMESTAMP
+);
+
+DROP TABLES IF EXISTS `geo_ips`;
+
+CREATE TABLE IF NOT EXISTS `geo_ips` (
+	`start` BIGINT(20) UNSIGNED NOT NULL,
+	`end` BIGINT(20) UNSIGNED NOT NULL,
+	`period` VARCHAR(32) NOT NULL DEFAULT '',
+	`country` CHAR(2) DEFAULT NULL,
+	`city_id` INT(11) NOT NULL DEFAULT '0',
+	PRIMARY KEY(`start`, `end`)
 );
