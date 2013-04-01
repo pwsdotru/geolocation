@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `geo_cities` (
 	`lat` DOUBLE(12,6) DEFAULT NULL,
 	`lng` DOUBLE(12,6) DEFAULT NULL,
 	`lastchange` TIMESTAMP
-);
+) DEFAULT CHARSET=cp1251;
 
 DROP TABLES IF EXISTS `geo_ips`;
 
@@ -20,4 +20,4 @@ CREATE TABLE IF NOT EXISTS `geo_ips` (
 	`country` CHAR(2) DEFAULT NULL,
 	`city_id` INT(11) NOT NULL DEFAULT '0',
 	PRIMARY KEY(`start`, `end`)
-);
+) DEFAULT CHARSET=cp1251;
