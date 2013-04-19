@@ -1,9 +1,14 @@
 #!/bin/sh
 
 #CONFIGURE VARIABLES
-WORK_FOLDER=/tmp
-
-DOWNLOAD_LINK="http://ipgeobase.ru/files/db/Main/geo_files.tar.gz"
+FILE_PATH=`readlink -e $0`
+FILE_FOLDER=`dirname $FILE_PATH`
+if [ -f $FILE_FOLDER/config.sh ]; then
+	source "$FILE_FOLDER/config.sh"
+else
+	echo "Can't find config file: config.sh"
+	exit 1
+fi
 
 #FILES VARIABLES
 ARCHIVE_FILE=$WORK_FOLDER/geo.tar.gz

@@ -1,0 +1,9 @@
+DOWNLOAD_LINK="http://ipgeobase.ru/files/db/Main/geo_files.tar.gz"
+
+WORK_FOLDER=/tmp
+
+MYSQL_HOST=localhost
+MYSQL_USER=test
+MYSQL_PASSWORD=test
+MYSQL_DATABASE=test
+
