@@ -36,4 +36,9 @@ if [ -f $ARCHIVE_FILE ]; then
 	rm -f $ARCHIVE_FILE
 fi
 
+if [ -f CITY_FILE ]; then
+	$PHP_PATH $FILE_FOLDER/city.php < CITY_FILE |$MYSQL_PATH --host=$MYSQL_PATH --user=$MYSQL_USER --password=$MYSQL_PASSWORD $MYSQL_DATABASE
+else
+	echo "Not found file for cities list"
+fi
 

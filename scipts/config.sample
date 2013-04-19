@@ -1,9 +1,18 @@
+#Link to archive for download
 DOWNLOAD_LINK="http://ipgeobase.ru/files/db/Main/geo_files.tar.gz"
 
+#Working folder. Folder for download archive and unpack it
 WORK_FOLDER=/tmp
 
-MYSQL_HOST=localhost
-MYSQL_USER=test
-MYSQL_PASSWORD=test
-MYSQL_DATABASE=test
+#Path to execute PHP CLI file
+PHP_PATH=/usr/bin/php
+
+#Path to execute MySQL client
+MYSQL_PATH=/usr/bin/mysql
+
+#MySQL database access parametrs
+MYSQL_HOST="localhost"
+MYSQL_USER="test"
+MYSQL_PASSWORD="test"
+MYSQL_DATABASE="test"
 
